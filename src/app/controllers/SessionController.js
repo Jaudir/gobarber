@@ -10,7 +10,7 @@ class SessionController {
     if (!user) {
       return res.status(401).json({ error: 'User not found!' });
     }
-    if (!(await User.checkPassword(password))) {
+    if (!(await user.checkPassword(password))) {
       return res.status(401).json({ error: 'Password does not macth!' });
     }
 
@@ -18,7 +18,9 @@ class SessionController {
 
     return res.json({
       user: { id, name, email },
-      token: jwt.sign({ id }, authConfig.secret, authConfig.expiresIn),
+      token: jwt.sign({ id }, authConfig.secret, {
+        expiresIn: authConfig.expiresIn,
+      }),
     });
   }
 }
