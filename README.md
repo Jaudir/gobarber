@@ -7,7 +7,7 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jaudir/gobarber?color=%2304D361">
   <img alt="size" src="https://img.shields.io/github/repo-size/jaudir/gobarber">
   <img alt="License" src="https://img.shields.io/github/license/jaudir/gobarber">
 
